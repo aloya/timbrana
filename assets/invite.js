@@ -192,13 +192,35 @@
     const form = $("inviteForm");
     const success = $("successState");
     const intro = $("formIntro");
-    if (form) form.hidden = true;
-    if (intro) intro.hidden = true;
-    if (success) {
-      success.classList.add("is-visible");
-      success.focus();
+  
+    if (form) {
+      form.reset();
+      form.hidden = true;
+      form.setAttribute("aria-hidden", "true");
     }
-    window.scrollTo({ top: 0, behavior: "smooth" });
+  
+    if (intro) {
+      intro.hidden = true;
+      intro.setAttribute("aria-hidden", "true");
+    }
+  
+    if (success) {
+      success.hidden = false;
+      success.classList.add("is-visible");
+      success.setAttribute("aria-hidden", "false");
+      success.setAttribute("tabindex", "-1");
+  
+      try {
+        success.focus({ preventScroll: true });
+      } catch {
+        success.focus();
+      }
+    }
+  
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
   }
 
   function setSubmitting(isSubmitting) {
