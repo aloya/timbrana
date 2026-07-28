@@ -21,10 +21,10 @@
  */
 window.TIMBRANA_INVITE_CONFIG = {
   // Example: "https://xxxxxxxx.supabase.co"
-  supabaseUrl: "YOUR_SUPABASE_URL",
+  supabaseUrl: "https://rgbmtkvxmyuennmdtgla.supabase.co",
 
   // Example: "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9..."
-  supabaseAnonKey: "YOUR_SUPABASE_ANON_KEY",
+  supabaseAnonKey: "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InJnYm10a3Z4bXl1ZW5ubWR0Z2xhIiwicm9sZSI6ImFub24iLCJpYXQiOjE3MzU5MjYyNzMsImV4cCI6MjA1MTUwMjI3M30.pUcFXKmPrAI3ZpF4tt5j-w94-kqR8rOa2u8nSjBsEB8",
 
   // Optional override. Default: `${supabaseUrl}/functions/v1/pilot-invitation-request`
   // functionUrl: "https://xxxxxxxx.supabase.co/functions/v1/pilot-invitation-request",
