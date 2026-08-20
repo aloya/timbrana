@@ -6,6 +6,9 @@
   <meta name="theme-color" content="#050605">
   <title>Request a private invitation — Timbrana</title>
   <meta name="description" content="Request a private invitation to the Timbrana First Build Program.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="assets/invite.css">
 </head>
 <body>
@@ -30,39 +33,21 @@
         </p>
       </header>
 
-      <div
-        class="success"
-        id="successState"
-        tabindex="-1"
-        role="status"
-        aria-live="polite"
-        hidden
-      >
+      <div class="success" id="successState" tabindex="-1" role="status" aria-live="polite" hidden>
         <h2 class="success-heading">Thank you for requesting an invitation.</h2>
-        <p class="success-body">
-          Your request has been received and will be reviewed after the application period closes on September 30, 2026. If your company is selected for the First Build Program, we'll contact you within seven days of the selection process.
-        </p>
+        <p class="success-body">Your request has been received and will be reviewed after the application period closes on September 30, 2026. If your company is selected for the First Build Program, we'll contact you within seven days of the selection process.</p>
         <p class="success-note">There is nothing else you need to do at this time.</p>
       </div>
 
       <form id="inviteForm" class="form-panel" novalidate>
         <input type="hidden" id="form_started_at" name="form_started_at" value="">
-
-        <!-- Honeypot: leave empty. Do not remove. -->
         <div class="hp" aria-hidden="true">
           <label for="company_website">Company website</label>
-          <input
-            type="text"
-            id="company_website"
-            name="company_website"
-            tabindex="-1"
-            autocomplete="off"
-          >
+          <input type="text" id="company_website" name="company_website" tabindex="-1" autocomplete="off">
         </div>
 
         <section class="section" aria-labelledby="about-you-heading">
           <h2 class="section-heading" id="about-you-heading">A little about you</h2>
-
           <div class="field" data-field="role">
             <label for="role">What is your role?</label>
             <select id="role" name="role" required>
@@ -76,50 +61,25 @@
             </select>
             <p class="error" id="error-role" hidden></p>
           </div>
-
           <div class="field" data-field="full_name">
             <label for="full_name">Your name</label>
-            <input
-              type="text"
-              id="full_name"
-              name="full_name"
-              autocomplete="name"
-              maxlength="200"
-              required
-            >
+            <input type="text" id="full_name" name="full_name" autocomplete="name" maxlength="200" required>
             <p class="error" id="error-full_name" hidden></p>
           </div>
-
           <div class="field" data-field="email">
             <label for="email">Your email</label>
-            <input
-              type="email"
-              id="email"
-              name="email"
-              autocomplete="email"
-              maxlength="320"
-              required
-            >
+            <input type="email" id="email" name="email" autocomplete="email" maxlength="320" required>
             <p class="error" id="error-email" hidden></p>
           </div>
         </section>
 
         <section class="section" aria-labelledby="company-heading">
           <h2 class="section-heading" id="company-heading">About your work</h2>
-
           <div class="field" data-field="company_name">
             <label for="company_name">Company name</label>
-            <input
-              type="text"
-              id="company_name"
-              name="company_name"
-              autocomplete="organization"
-              maxlength="200"
-              required
-            >
+            <input type="text" id="company_name" name="company_name" autocomplete="organization" maxlength="200" required>
             <p class="error" id="error-company_name" hidden></p>
           </div>
-
           <div class="field" data-field="company_type">
             <label for="company_type">How would you describe your company?</label>
             <select id="company_type" name="company_type" required>
@@ -133,39 +93,25 @@
             </select>
             <p class="error" id="error-company_type" hidden></p>
           </div>
-
           <div class="field" data-field="project_delivery_style">
             <label for="project_delivery_style">How does your team typically deliver projects?</label>
             <select id="project_delivery_style" name="project_delivery_style" required>
               <option value="" selected disabled>Select one</option>
-              <option value="We primarily coordinate subcontractors">
-                We primarily coordinate subcontractors
-              </option>
-              <option value="We coordinate subcontractors and self-perform some work">
-                We coordinate subcontractors and self-perform some work
-              </option>
-              <option value="We primarily self-perform the work">
-                We primarily self-perform the work
-              </option>
+              <option value="We primarily coordinate subcontractors">We primarily coordinate subcontractors</option>
+              <option value="We coordinate subcontractors and self-perform some work">We coordinate subcontractors and self-perform some work</option>
+              <option value="We primarily self-perform the work">We primarily self-perform the work</option>
               <option value="It varies by project">It varies by project</option>
             </select>
             <p class="error" id="error-project_delivery_style" hidden></p>
           </div>
-
           <div class="field" data-field="active_project_range">
             <div class="label-row">
-              <label for="active_project_range">
-                About how many projects are typically active at one time?
-              </label>
+              <label for="active_project_range">About how many projects are typically active at one time?</label>
               <span class="optional">Optional</span>
             </div>
             <select id="active_project_range" name="active_project_range">
               <option value="" selected>Prefer not to say</option>
-              <option value="1">1</option>
-              <option value="2–5">2–5</option>
-              <option value="6–10">6–10</option>
-              <option value="11–20">11–20</option>
-              <option value="More than 20">More than 20</option>
+              <option value="1">1</option><option value="2–5">2–5</option><option value="6–10">6–10</option><option value="11–20">11–20</option><option value="More than 20">More than 20</option>
             </select>
             <p class="error" id="error-active_project_range" hidden></p>
           </div>
@@ -173,106 +119,45 @@
 
         <section class="section section-featured" aria-labelledby="awareness-heading">
           <h2 class="section-heading" id="awareness-heading">Project Awareness</h2>
-          <p class="section-lede">
-            These two questions help us understand whether the First Build Program may be a good fit.
-          </p>
-
+          <p class="section-lede">These two questions help us understand whether the First Build Program may be a good fit.</p>
           <div class="field field-featured" data-field="reason_for_interest">
-            <div class="label-row">
-              <label for="reason_for_interest">
-                What made you stop and explore Project Awareness today?
-              </label>
-              <span class="char-count" id="count-reason_for_interest">0 / 1500</span>
-            </div>
-            <textarea
-              id="reason_for_interest"
-              name="reason_for_interest"
-              maxlength="1500"
-              rows="6"
-              required
-            ></textarea>
+            <div class="label-row"><label for="reason_for_interest">What made you stop and explore Project Awareness today?</label><span class="char-count" id="count-reason_for_interest">0 / 1500</span></div>
+            <textarea id="reason_for_interest" name="reason_for_interest" maxlength="1500" rows="6" required></textarea>
             <p class="error" id="error-reason_for_interest" hidden></p>
           </div>
-
           <div class="field field-featured" data-field="project_awareness_meaning">
-            <div class="label-row">
-              <label for="project_awareness_meaning">
-                In your own words, what does Project Awareness mean to you?
-              </label>
-              <span class="char-count" id="count-project_awareness_meaning">0 / 1500</span>
-            </div>
-            <textarea
-              id="project_awareness_meaning"
-              name="project_awareness_meaning"
-              maxlength="1500"
-              rows="6"
-              required
-            ></textarea>
+            <div class="label-row"><label for="project_awareness_meaning">In your own words, what does Project Awareness mean to you?</label><span class="char-count" id="count-project_awareness_meaning">0 / 1500</span></div>
+            <textarea id="project_awareness_meaning" name="project_awareness_meaning" maxlength="1500" rows="6" required></textarea>
             <p class="error" id="error-project_awareness_meaning" hidden></p>
           </div>
         </section>
 
         <section class="section" aria-labelledby="feedback-heading">
           <h2 class="section-heading" id="feedback-heading">During the program</h2>
-
           <div class="field" data-field="feedback_preference">
-            <label for="feedback_preference">
-              How would you prefer to stay in touch during the program?
-            </label>
+            <label for="feedback_preference">How would you prefer to stay in touch during the program?</label>
             <select id="feedback_preference" name="feedback_preference" required>
               <option value="" selected disabled>Select one</option>
-              <option value="Occasional short conversations">Occasional short conversations</option>
-              <option value="Email">Email</option>
-              <option value="Feedback while using Timbrana">Feedback while using Timbrana</option>
-              <option value="A combination">A combination</option>
-              <option value="No preference">No preference</option>
+              <option value="Occasional short conversations">Occasional short conversations</option><option value="Email">Email</option><option value="Feedback while using Timbrana">Feedback while using Timbrana</option><option value="A combination">A combination</option><option value="No preference">No preference</option>
             </select>
             <p class="error" id="error-feedback_preference" hidden></p>
           </div>
-
           <div class="field" data-field="program_acknowledged">
-            <label class="ack">
-              <input
-                type="checkbox"
-                id="program_acknowledged"
-                name="program_acknowledged"
-                required
-              >
-              <span>
-                I understand that submitting this request does not guarantee selection for the
-                Timbrana First Build Program.
-              </span>
-            </label>
+            <label class="ack"><input type="checkbox" id="program_acknowledged" name="program_acknowledged" required><span>I understand that submitting this request does not guarantee selection for the Timbrana First Build Program.</span></label>
             <p class="error" id="error-program_acknowledged" hidden></p>
           </div>
         </section>
 
         <div class="submit-block">
-          <p class="legal">
-            By submitting, you agree that Timbrana may contact you about this request and the
-            First Build Program.
-          </p>
+          <p class="legal">By submitting, you agree that Timbrana may contact you about this request and the First Build Program.</p>
           <p class="form-error" id="formError" hidden></p>
-          <button type="submit" class="cta-button" id="submitButton">
-            Request invitation
-          </button>
+          <button type="submit" class="cta-button" id="submitButton">Request invitation</button>
         </div>
       </form>
     </div>
   </main>
 
-  <footer>
-    <div class="shell footer-inner">
-      <span>© 2026 Timbrana</span>
-      <span>Project Awareness for construction.</span>
-    </div>
-  </footer>
-
-  <!--
-    PUBLIC KEYS ONLY.
-    Copy config.example.js → config.js and fill supabaseUrl + supabaseAnonKey.
-    Never put SUPABASE_SERVICE_ROLE_KEY here.
-  -->
+  <footer><div class="shell footer-inner"><span>© 2026 Timbrana</span><span>Project Awareness for construction.</span></div></footer>
   <script src="config.js"></script>
   <script src="assets/invite.js"></script>
 </body>
