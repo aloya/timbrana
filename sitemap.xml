@@ -1,9 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url><loc>https://timbrana.com/</loc></url>
-  <url><loc>https://timbrana.com/project-awareness.html</loc></url>
-  <url><loc>https://timbrana.com/observation-to-resolution.html</loc></url>
-  <url><loc>https://timbrana.com/rhythm-of-a-well-run-project.html</loc></url>
-  <url><loc>https://timbrana.com/the-project-clearly.html</loc></url>
-  <url><loc>https://timbrana.com/invite.html</loc></url>
+  <url><loc>https://timbrana.com/</loc><lastmod>2026-08-20</lastmod></url>
+  <url><loc>https://timbrana.com/project-awareness.html</loc><lastmod>2026-08-20</lastmod></url>
+  <url><loc>https://timbrana.com/observation-to-resolution.html</loc><lastmod>2026-08-20</lastmod></url>
+  <url><loc>https://timbrana.com/rhythm-of-a-well-run-project.html</loc><lastmod>2026-08-20</lastmod></url>
+  <url><loc>https://timbrana.com/the-project-clearly.html</loc><lastmod>2026-08-20</lastmod></url>
 </urlset>
