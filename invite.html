@@ -4,171 +4,68 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="theme-color" content="#050605">
-  <title>Request a Private Invitation | Timbrana</title>
-  <meta name="description" content="Request a private invitation to the Timbrana First Build Program for construction teams.">
+  <title>Request a First Build Invitation | Timbrana</title>
+  <meta name="description" content="Request an invitation to use Timbrana on real construction projects before public launch.">
   <meta name="robots" content="noindex,follow">
   <link rel="canonical" href="https://timbrana.com/invite.html">
-  <meta property="og:type" content="website">
-  <meta property="og:site_name" content="Timbrana">
-  <meta property="og:title" content="Request a Private Invitation | Timbrana">
-  <meta property="og:description" content="Request a private invitation to the Timbrana First Build Program.">
-  <meta property="og:url" content="https://timbrana.com/invite.html">
-  <meta name="twitter:card" content="summary">
-  <meta name="twitter:title" content="Request a Private Invitation | Timbrana">
-  <meta name="twitter:description" content="Request a private invitation to the Timbrana First Build Program.">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <meta property="og:type" content="website"><meta property="og:site_name" content="Timbrana"><meta property="og:title" content="Request a First Build Invitation | Timbrana"><meta property="og:description" content="Use Timbrana before public launch and help shape what comes next."><meta property="og:url" content="https://timbrana.com/invite.html">
+  <meta name="twitter:card" content="summary"><meta name="twitter:title" content="Timbrana First Build"><meta name="twitter:description" content="Request early access to Timbrana.">
+  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="assets/invite.css">
 </head>
 <body>
-  <header class="nav">
-    <div class="shell nav-inner">
-      <a class="brand" href="index.html" aria-label="Timbrana home">
-        <img src="assets/timbrana-wordmark.svg" alt="Timbrana">
-      </a>
-      <a class="nav-link" href="index.html">Back to Timbrana</a>
+  <header class="nav"><div class="shell nav-inner"><a class="brand" href="index.html" aria-label="Timbrana home"><img src="assets/timbrana-wordmark.svg" alt="Timbrana"></a><a class="nav-link" href="index.html">Back to Timbrana</a></div></header>
+
+  <main><div class="shell">
+    <header class="intro" id="formIntro">
+      <div class="program">The Timbrana First Build Program</div>
+      <h1 class="page-heading">Use Timbrana before everyone else.</h1>
+      <p class="page-support">We're selecting a small group of general contractors to use Timbrana on real projects before public launch. Tell us a little about your company and one problem you'd like better visibility into.</p>
+    </header>
+
+    <div class="success" id="successState" tabindex="-1" role="status" aria-live="polite" hidden>
+      <h2 class="success-heading">Thanks. We received your request.</h2>
+      <p class="success-body">We'll review First Build requests after the application period closes on September 30, 2026. If your company is selected, we'll contact you within seven days of the selection process.</p>
+      <p class="success-note">There's nothing else you need to do right now.</p>
     </div>
-  </header>
 
-  <main>
-    <div class="shell">
-      <header class="intro" id="formIntro">
-        <div class="program">The Timbrana First Build Program</div>
-        <h1 class="page-heading">Request a private invitation</h1>
-        <p class="page-support">
-          Tell us a little about yourself and the kind of projects you help bring together.
-          We only ask for the information needed to understand whether the First Build Program
-          may be a good fit.
-        </p>
-      </header>
+    <form id="inviteForm" class="form-panel" novalidate>
+      <input type="hidden" id="form_started_at" name="form_started_at" value="">
+      <input type="hidden" id="project_awareness_meaning" name="project_awareness_meaning" value="Not collected on website-v2">
+      <input type="hidden" id="feedback_preference" name="feedback_preference" value="No preference">
+      <div class="hp" aria-hidden="true"><label for="company_website">Company website</label><input type="text" id="company_website" name="company_website" tabindex="-1" autocomplete="off"></div>
 
-      <div class="success" id="successState" tabindex="-1" role="status" aria-live="polite" hidden>
-        <h2 class="success-heading">Thank you for requesting an invitation.</h2>
-        <p class="success-body">Your request has been received and will be reviewed after the application period closes on September 30, 2026. If your company is selected for the First Build Program, we'll contact you within seven days of the selection process.</p>
-        <p class="success-note">There is nothing else you need to do at this time.</p>
-      </div>
+      <section class="section" aria-labelledby="about-you-heading">
+        <h2 class="section-heading" id="about-you-heading">About you</h2>
+        <div class="field" data-field="full_name"><label for="full_name">Name</label><input type="text" id="full_name" name="full_name" autocomplete="name" maxlength="200" required><p class="error" id="error-full_name" hidden></p></div>
+        <div class="field" data-field="email"><label for="email">Work email</label><input type="email" id="email" name="email" autocomplete="email" maxlength="320" required><p class="error" id="error-email" hidden></p></div>
+        <div class="field" data-field="role"><label for="role">Role</label><select id="role" name="role" required><option value="" selected disabled>Select your role</option><option value="Company Owner">Company Owner</option><option value="General Manager">General Manager</option><option value="Operations Manager">Operations Manager</option><option value="Project Manager">Project Manager</option><option value="Superintendent">Superintendent</option><option value="Other">Other</option></select><p class="error" id="error-role" hidden></p></div>
+      </section>
 
-      <form id="inviteForm" class="form-panel" novalidate>
-        <input type="hidden" id="form_started_at" name="form_started_at" value="">
-        <div class="hp" aria-hidden="true">
-          <label for="company_website">Company website</label>
-          <input type="text" id="company_website" name="company_website" tabindex="-1" autocomplete="off">
-        </div>
+      <section class="section" aria-labelledby="company-heading">
+        <h2 class="section-heading" id="company-heading">Your company</h2>
+        <div class="field" data-field="company_name"><label for="company_name">Company</label><input type="text" id="company_name" name="company_name" autocomplete="organization" maxlength="200" required><p class="error" id="error-company_name" hidden></p></div>
+        <div class="field" data-field="company_type"><label for="company_type">Company type</label><select id="company_type" name="company_type" required><option value="" selected disabled>Select one</option><option value="General Contractor">General Contractor</option><option value="Construction Manager">Construction Manager</option><option value="Design-Build Firm">Design-Build Firm</option><option value="Specialty Contractor">Specialty Contractor</option><option value="Owner or Developer">Owner or Developer</option><option value="Other">Other</option></select><p class="error" id="error-company_type" hidden></p></div>
+        <div class="field" data-field="project_delivery_style"><label for="project_delivery_style">How does your team typically deliver projects?</label><select id="project_delivery_style" name="project_delivery_style" required><option value="" selected disabled>Select one</option><option value="We primarily coordinate subcontractors">We primarily coordinate subcontractors</option><option value="We coordinate subcontractors and self-perform some work">We coordinate subcontractors and self-perform some work</option><option value="We primarily self-perform the work">We primarily self-perform the work</option><option value="It varies by project">It varies by project</option></select><p class="error" id="error-project_delivery_style" hidden></p></div>
+        <div class="field" data-field="active_project_range"><div class="label-row"><label for="active_project_range">How many projects are typically active at one time?</label><span class="optional">Optional</span></div><select id="active_project_range" name="active_project_range"><option value="" selected>Prefer not to say</option><option value="1">1</option><option value="2–5">2–5</option><option value="6–10">6–10</option><option value="11–20">11–20</option><option value="More than 20">More than 20</option></select><p class="error" id="error-active_project_range" hidden></p></div>
+      </section>
 
-        <section class="section" aria-labelledby="about-you-heading">
-          <h2 class="section-heading" id="about-you-heading">A little about you</h2>
-          <div class="field" data-field="role">
-            <label for="role">What is your role?</label>
-            <select id="role" name="role" required>
-              <option value="" selected disabled>Select your role</option>
-              <option value="Company Owner">Company Owner</option>
-              <option value="General Manager">General Manager</option>
-              <option value="Operations Manager">Operations Manager</option>
-              <option value="Project Manager">Project Manager</option>
-              <option value="Superintendent">Superintendent</option>
-              <option value="Other">Other</option>
-            </select>
-            <p class="error" id="error-role" hidden></p>
-          </div>
-          <div class="field" data-field="full_name">
-            <label for="full_name">Your name</label>
-            <input type="text" id="full_name" name="full_name" autocomplete="name" maxlength="200" required>
-            <p class="error" id="error-full_name" hidden></p>
-          </div>
-          <div class="field" data-field="email">
-            <label for="email">Your email</label>
-            <input type="email" id="email" name="email" autocomplete="email" maxlength="320" required>
-            <p class="error" id="error-email" hidden></p>
-          </div>
-        </section>
+      <section class="section section-featured" aria-labelledby="project-heading">
+        <h2 class="section-heading" id="project-heading">Your projects</h2>
+        <p class="section-lede">This is the part we care about most.</p>
+        <div class="field field-featured" data-field="reason_for_interest"><div class="label-row"><label for="reason_for_interest">What's one problem you wish your team had better visibility into?</label><span class="char-count" id="count-reason_for_interest">0 / 1500</span></div><textarea id="reason_for_interest" name="reason_for_interest" maxlength="1500" rows="6" required></textarea><p class="error" id="error-reason_for_interest" hidden></p><p class="optional" style="margin-top:10px">A few sentences is plenty.</p></div>
+      </section>
 
-        <section class="section" aria-labelledby="company-heading">
-          <h2 class="section-heading" id="company-heading">About your work</h2>
-          <div class="field" data-field="company_name">
-            <label for="company_name">Company name</label>
-            <input type="text" id="company_name" name="company_name" autocomplete="organization" maxlength="200" required>
-            <p class="error" id="error-company_name" hidden></p>
-          </div>
-          <div class="field" data-field="company_type">
-            <label for="company_type">How would you describe your company?</label>
-            <select id="company_type" name="company_type" required>
-              <option value="" selected disabled>Select one</option>
-              <option value="General Contractor">General Contractor</option>
-              <option value="Construction Manager">Construction Manager</option>
-              <option value="Design-Build Firm">Design-Build Firm</option>
-              <option value="Specialty Contractor">Specialty Contractor</option>
-              <option value="Owner or Developer">Owner or Developer</option>
-              <option value="Other">Other</option>
-            </select>
-            <p class="error" id="error-company_type" hidden></p>
-          </div>
-          <div class="field" data-field="project_delivery_style">
-            <label for="project_delivery_style">How does your team typically deliver projects?</label>
-            <select id="project_delivery_style" name="project_delivery_style" required>
-              <option value="" selected disabled>Select one</option>
-              <option value="We primarily coordinate subcontractors">We primarily coordinate subcontractors</option>
-              <option value="We coordinate subcontractors and self-perform some work">We coordinate subcontractors and self-perform some work</option>
-              <option value="We primarily self-perform the work">We primarily self-perform the work</option>
-              <option value="It varies by project">It varies by project</option>
-            </select>
-            <p class="error" id="error-project_delivery_style" hidden></p>
-          </div>
-          <div class="field" data-field="active_project_range">
-            <div class="label-row">
-              <label for="active_project_range">About how many projects are typically active at one time?</label>
-              <span class="optional">Optional</span>
-            </div>
-            <select id="active_project_range" name="active_project_range">
-              <option value="" selected>Prefer not to say</option>
-              <option value="1">1</option><option value="2–5">2–5</option><option value="6–10">6–10</option><option value="11–20">11–20</option><option value="More than 20">More than 20</option>
-            </select>
-            <p class="error" id="error-active_project_range" hidden></p>
-          </div>
-        </section>
+      <section class="section" aria-labelledby="program-heading">
+        <h2 class="section-heading" id="program-heading">First Build</h2>
+        <p class="section-lede">Participants may be asked to share occasional feedback as Timbrana develops.</p>
+        <div class="field" data-field="program_acknowledged"><label class="ack"><input type="checkbox" id="program_acknowledged" name="program_acknowledged" required><span>I understand that submitting this request does not guarantee selection for the Timbrana First Build Program.</span></label><p class="error" id="error-program_acknowledged" hidden></p></div>
+      </section>
 
-        <section class="section section-featured" aria-labelledby="awareness-heading">
-          <h2 class="section-heading" id="awareness-heading">Project Awareness</h2>
-          <p class="section-lede">These two questions help us understand whether the First Build Program may be a good fit.</p>
-          <div class="field field-featured" data-field="reason_for_interest">
-            <div class="label-row"><label for="reason_for_interest">What made you stop and explore Project Awareness today?</label><span class="char-count" id="count-reason_for_interest">0 / 1500</span></div>
-            <textarea id="reason_for_interest" name="reason_for_interest" maxlength="1500" rows="6" required></textarea>
-            <p class="error" id="error-reason_for_interest" hidden></p>
-          </div>
-          <div class="field field-featured" data-field="project_awareness_meaning">
-            <div class="label-row"><label for="project_awareness_meaning">In your own words, what does Project Awareness mean to you?</label><span class="char-count" id="count-project_awareness_meaning">0 / 1500</span></div>
-            <textarea id="project_awareness_meaning" name="project_awareness_meaning" maxlength="1500" rows="6" required></textarea>
-            <p class="error" id="error-project_awareness_meaning" hidden></p>
-          </div>
-        </section>
-
-        <section class="section" aria-labelledby="feedback-heading">
-          <h2 class="section-heading" id="feedback-heading">During the program</h2>
-          <div class="field" data-field="feedback_preference">
-            <label for="feedback_preference">How would you prefer to stay in touch during the program?</label>
-            <select id="feedback_preference" name="feedback_preference" required>
-              <option value="" selected disabled>Select one</option>
-              <option value="Occasional short conversations">Occasional short conversations</option><option value="Email">Email</option><option value="Feedback while using Timbrana">Feedback while using Timbrana</option><option value="A combination">A combination</option><option value="No preference">No preference</option>
-            </select>
-            <p class="error" id="error-feedback_preference" hidden></p>
-          </div>
-          <div class="field" data-field="program_acknowledged">
-            <label class="ack"><input type="checkbox" id="program_acknowledged" name="program_acknowledged" required><span>I understand that submitting this request does not guarantee selection for the Timbrana First Build Program.</span></label>
-            <p class="error" id="error-program_acknowledged" hidden></p>
-          </div>
-        </section>
-
-        <div class="submit-block">
-          <p class="legal">By submitting, you agree that Timbrana may contact you about this request and the First Build Program.</p>
-          <p class="form-error" id="formError" hidden></p>
-          <button type="submit" class="cta-button" id="submitButton">Request invitation</button>
-        </div>
-      </form>
-    </div>
-  </main>
+      <div class="submit-block"><p class="legal">By submitting, you agree that Timbrana may contact you about this request and the First Build Program.</p><p class="form-error" id="formError" hidden></p><button type="submit" class="cta-button" id="submitButton">Request invitation</button></div>
+    </form>
+  </div></main>
 
   <footer><div class="shell footer-inner"><span>© 2026 Timbrana</span><span>Project Awareness for construction.</span></div></footer>
-  <script src="config.js"></script>
-  <script src="assets/invite.js"></script>
-</body>
-</html>
+  <script src="config.js"></script><script src="assets/invite.js"></script>
+</body></html>
