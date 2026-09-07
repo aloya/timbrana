@@ -191,7 +191,7 @@
   function trackFirstBuildSignup() {
     if (typeof window.gtag !== "function") return;
 
-    window.gtag("event", "sign_up", {
+    window.gtag("event", "manual_event_SIGNUI", {
       method: "first_build_form",
     });
   }
