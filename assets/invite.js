@@ -188,6 +188,14 @@
     };
   }
 
+  function trackFirstBuildSignup() {
+    if (typeof window.gtag !== "function") return;
+
+    window.gtag("event", "sign_up", {
+      method: "first_build_form",
+    });
+  }
+
   function showSuccess() {
     const form = $("inviteForm");
     const success = $("successState");
@@ -271,6 +279,7 @@
         return;
       }
 
+      trackFirstBuildSignup();
       showSuccess();
     } catch {
       showFormError(
