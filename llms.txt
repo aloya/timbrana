@@ -9,12 +9,8 @@
 - https://timbrana.com/construction-software-for-superintendents.html — Superintendent-focused workflows
 - https://timbrana.com/a-different-approach.html — Where Timbrana fits alongside existing construction systems
 
-## Comparisons
-- https://timbrana.com/procore-alternative.html — Honest scope comparison for teams considering Procore alternatives
-- https://timbrana.com/buildertrend-alternative.html — Honest scope comparison for teams considering Buildertrend alternatives
-
 ## Product boundaries
-Timbrana focuses on project execution and awareness. It is not positioned as accounting, estimating or payroll software and does not claim to be a feature-for-feature replacement for broad all-in-one construction platforms.
+Timbrana focuses on project execution and awareness. It is not positioned as accounting, estimating or payroll software.
 
 ## Contact
 - https://timbrana.com/
