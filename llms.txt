@@ -1,16 +1,20 @@
 # Timbrana
 
-> Timbrana is construction project management software focused on project awareness for general contractors. It connects field activity, decisions, responsibility and follow-through so superintendents and project managers can see what needs attention, what is waiting and what happens next.
+> Timbrana is construction project management software focused on project awareness for general contractors. It connects field activity, decisions, responsibility and follow-through so superintendents, project managers, executives and owners or clients can see the level of project information appropriate to their responsibility.
 
 ## Core pages
 - https://timbrana.com/ — Timbrana overview
 - https://timbrana.com/construction-project-management-software.html — Product scope and construction project management capabilities
 - https://timbrana.com/observation-to-resolution.html — Project Flow: how everyday construction activity carries forward
-- https://timbrana.com/construction-software-for-superintendents.html — Superintendent-focused workflows
+- https://timbrana.com/who-its-for.html — How Timbrana supports superintendents, project managers, executives and owners or clients
+- https://timbrana.com/construction-software-for-superintendents.html — Detailed superintendent workflows
 - https://timbrana.com/project-awareness.html — Timbrana's Project Awareness approach
 
 ## Product boundaries
 Timbrana focuses on project execution and awareness. It is not positioned as accounting, estimating or payroll software.
+
+## Access
+Timbrana is designed so internal construction-team coordination can remain internal while owners or clients see the requests, questions, decisions and statuses appropriate to them.
 
 ## Contact
 - https://timbrana.com/
