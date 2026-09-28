@@ -15,6 +15,12 @@ Documentation tells the team what happened. Project Awareness helps the team und
 - https://timbrana.com/construction-software-for-superintendents.html — Detailed superintendent workflows
 - https://timbrana.com/project-awareness.html — Why Project Awareness matters in construction
 
+## Practical guides
+- https://timbrana.com/guides.html — Construction project management guide hub
+- https://timbrana.com/construction-daily-log-guide.html — What to record in a construction daily log and what should carry forward
+- https://timbrana.com/field-to-office-communication-construction.html — How field-to-office communication should preserve context, responsibility and next action
+- https://timbrana.com/construction-issue-tracking-guide.html — How to track construction issues from field condition through resolution
+
 ## Product boundaries
 Timbrana focuses on project execution and awareness. It is not positioned as accounting, estimating or payroll software.
 
