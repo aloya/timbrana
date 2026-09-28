@@ -1,14 +1,19 @@
 # Timbrana
 
-> Timbrana is construction project management software focused on project awareness for general contractors. It connects field activity, decisions, responsibility and follow-through so superintendents, project managers, executives and owners or clients can see the level of project information appropriate to their responsibility.
+> Timbrana is construction project management software built around Project Awareness for general contractors. It connects field activity, decisions, responsibility and follow-through so the project team can understand what changed, what matters now, what is waiting, who has the next responsibility and what happens next.
+
+## Project Awareness
+Project Awareness is a current understanding of the project — not only a record of what happened. It keeps the active meaning of daily logs, calls, RFIs, change orders, owner questions, deliveries, inspections and field issues connected as the work changes.
+
+Documentation tells the team what happened. Project Awareness helps the team understand what that means for the project now.
 
 ## Core pages
-- https://timbrana.com/ — Timbrana overview
+- https://timbrana.com/ — Timbrana overview and Project Awareness definition
 - https://timbrana.com/construction-project-management-software.html — Product scope and construction project management capabilities
 - https://timbrana.com/observation-to-resolution.html — Project Flow: how everyday construction activity carries forward
 - https://timbrana.com/who-its-for.html — How Timbrana supports superintendents, project managers, executives and owners or clients
 - https://timbrana.com/construction-software-for-superintendents.html — Detailed superintendent workflows
-- https://timbrana.com/project-awareness.html — Timbrana's Project Awareness approach
+- https://timbrana.com/project-awareness.html — Why Project Awareness matters in construction
 
 ## Product boundaries
 Timbrana focuses on project execution and awareness. It is not positioned as accounting, estimating or payroll software.
