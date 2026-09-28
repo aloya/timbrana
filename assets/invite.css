@@ -32,16 +32,21 @@ body {
 a { color: inherit; }
 .shell { width: min(760px, calc(100% - 64px)); margin-inline: auto; }
 .nav { position: sticky; top: 0; z-index: 20; background: linear-gradient(180deg, rgba(5,6,5,.97), rgba(5,6,5,.72) 70%, transparent); backdrop-filter: blur(10px); -webkit-backdrop-filter: blur(10px); }
-.nav-inner { min-height: 86px; display:flex; align-items:center; justify-content:space-between; gap:24px; }
-.brand { display:block; width:180px; flex:0 0 auto; }
+.nav .shell { width:min(1180px,calc(100% - 56px)); }
+.nav-inner { min-height:76px; display:flex; align-items:center; gap:28px; }
+.brand { display:block; width:170px; flex:0 0 auto; }
 .brand img { display:block; width:100%; height:auto; }
-.nav-link { position:relative; padding:8px 0; color:rgba(255,255,255,.7); font-size:10px; font-weight:700; letter-spacing:.17em; text-transform:uppercase; text-decoration:none; transition:color .35s var(--ease); }
-.nav-link:hover,.nav-link:focus-visible { color:#fff; }
+.nav-links { margin-left:auto; display:flex; align-items:center; gap:24px; }
+.nav-link { position:relative; padding:8px 0; color:rgba(255,255,255,.68); font-size:11px; font-weight:700; letter-spacing:.08em; text-transform:uppercase; text-decoration:none; transition:color .35s var(--ease); white-space:nowrap; }
+.nav-link:hover,.nav-link:focus-visible,.nav-link.active { color:#fff; }
+.nav-link.active:after { content:""; position:absolute; left:0; right:0; bottom:-14px; height:2px; background:var(--accent); }
+.nav-cta { margin-left:4px; padding:11px 16px; border-radius:5px; background:var(--accent); color:#fff; text-decoration:none; font-size:11px; font-weight:750; letter-spacing:.08em; text-transform:uppercase; white-space:nowrap; }
+.nav-cta:hover { background:var(--accent-hover); }
 .nav-link:focus-visible { outline:2px solid #fff; outline-offset:4px; }
 main { padding:48px 0 96px; }
 .intro { margin-bottom:48px; }
 .program { margin-bottom:22px; color:rgba(255,255,255,.6); font-size:10.5px; font-weight:700; letter-spacing:.19em; text-transform:uppercase; }
-.page-heading { margin:0; max-width:15ch; font-size:clamp(2.55rem,5vw,3.75rem); line-height:1.01; letter-spacing:-.052em; font-weight:600; text-wrap:balance; }
+.page-heading { margin:0; max-width:15ch; font-size:clamp(2.35rem,4.1vw,3.25rem); line-height:1.06; letter-spacing:-.04em; font-weight:600; text-wrap:balance; }
 .page-support { max-width:40rem; margin:22px 0 0; color:var(--muted); font-size:clamp(1.05rem,1.4vw,1.18rem); line-height:1.68; letter-spacing:-.012em; }
 .form-panel { display:grid; gap:42px; }
 .section { padding-top:34px; border-top:1px solid var(--line); }
@@ -88,5 +93,5 @@ input:focus-visible,select:focus-visible,textarea:focus-visible { outline:none; 
 .success-note { margin:18px 0 0; color:var(--soft); font-size:.98rem; line-height:1.65; }
 footer { padding:26px 0 34px; border-top:1px solid var(--line); color:rgba(255,255,255,.43); }
 .footer-inner { display:flex; justify-content:space-between; gap:20px; font-size:10.5px; letter-spacing:.075em; }
-@media(max-width:760px){.shell{width:min(100% - 36px,760px)}.nav-inner{min-height:74px}.brand{width:148px}main{flex:1;padding:48px 0 96px}.intro{margin-bottom:34px}.form-panel{gap:34px}.cta-button{width:100%;max-width:360px}.footer-inner{flex-direction:column}}
+@media(max-width:760px){.shell{width:min(100% - 36px,760px)}.nav .shell{width:calc(100% - 34px)}.nav{overflow:hidden}.nav-inner{display:block;min-height:0;padding:14px 0 0}.brand{width:145px}.nav-links{width:calc(100vw - 17px);margin:12px 0 0;gap:0;overflow-x:auto;scrollbar-width:none;padding:0 17px 12px 0}.nav-links::-webkit-scrollbar{display:none}.nav-link,.nav-cta{display:block;flex:0 0 auto;margin:0;padding:9px 13px;font-size:9px}.nav-link:first-child{padding-left:0}.nav-link.active:after{bottom:0}.nav-cta{background:none;color:var(--accent)}main{flex:1;padding:48px 0 96px}.intro{margin-bottom:34px}.form-panel{gap:34px}.cta-button{width:100%;max-width:360px}.footer-inner{flex-direction:column}}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.cta-button,input,select,textarea{transition:none}}
