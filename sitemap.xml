@@ -31,17 +31,21 @@
   <url>
     <loc>https://timbrana.com/guides.html</loc>
     <lastmod>2026-09-28</lastmod>
+    <image:image><image:loc>https://timbrana.com/assets/project.png</image:loc></image:image>
   </url>
   <url>
     <loc>https://timbrana.com/construction-daily-log-guide.html</loc>
     <lastmod>2026-09-28</lastmod>
+    <image:image><image:loc>https://timbrana.com/assets/daily-log.png</image:loc></image:image>
   </url>
   <url>
     <loc>https://timbrana.com/field-to-office-communication-construction.html</loc>
     <lastmod>2026-09-28</lastmod>
+    <image:image><image:loc>https://timbrana.com/assets/project.png</image:loc></image:image>
   </url>
   <url>
     <loc>https://timbrana.com/construction-issue-tracking-guide.html</loc>
     <lastmod>2026-09-28</lastmod>
+    <image:image><image:loc>https://timbrana.com/assets/issue.png</image:loc></image:image>
   </url>
 </urlset>
