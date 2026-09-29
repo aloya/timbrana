@@ -21,6 +21,9 @@ Documentation tells the team what happened. Project Awareness helps the team und
 - https://timbrana.com/field-to-office-communication-construction.html — How field-to-office communication should preserve context, responsibility and next action
 - https://timbrana.com/construction-issue-tracking-guide.html — How to track construction issues from field condition through resolution
 
+## Project scenario library
+- https://timbrana.com/construction-project-scenarios.html — Real-world construction scenarios showing how commitments, owner requests, inspections, deliveries, RFIs, no-shows and coordination issues should move through the project
+
 ## Product boundaries
 Timbrana focuses on project execution and awareness. It is not positioned as accounting, estimating or payroll software.
 
