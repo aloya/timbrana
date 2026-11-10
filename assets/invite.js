@@ -1,5 +1,5 @@
 /**
- * Timbrana First Build invitation form client.
+ * Timbrana early-access request form client.
  *
  * Uses ONLY the public Supabase URL + anon key from config.js.
  * Never place SUPABASE_SERVICE_ROLE_KEY in this file or any other frontend asset.
@@ -188,11 +188,11 @@
     };
   }
 
-  function trackFirstBuildSignup() {
+  function trackEarlyAccessRequest() {
     if (typeof window.gtag !== "function") return;
 
     window.gtag("event", "manual_event_SIGNUI", {
-      method: "first_build_form",
+      method: "early_access_form",
     });
   }
 
@@ -235,7 +235,7 @@
     const btn = $("submitButton");
     if (!btn) return;
     btn.disabled = isSubmitting;
-    btn.textContent = isSubmitting ? "Sending request…" : "Request invitation";
+    btn.textContent = isSubmitting ? "Sending request…" : "Request Early Access";
   }
 
   async function submitForm(form) {
@@ -279,7 +279,7 @@
         return;
       }
 
-      trackFirstBuildSignup();
+      trackEarlyAccessRequest();
       showSuccess();
     } catch {
       showFormError(
