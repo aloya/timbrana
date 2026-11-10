@@ -17,7 +17,7 @@
   <meta name="robots" content="noindex,follow">
   <link rel="canonical" href="https://timbrana.com/invite.html">
   <link rel="icon" href="/favicon.png" type="image/png" sizes="512x512">
-  <meta property="og:type" content="website"><meta property="og:site_name" content="Timbrana"><meta property="og:title" content="Request a First Build Invitation | Timbrana"><meta property="og:description" content="Tell us about your company and request early access to Timbrana."><meta property="og:url" content="https://timbrana.com/invite.html">
+  <meta property="og:type" content="website"><meta property="og:site_name" content="Timbrana"><meta property="og:title" content="Request Early Access | Timbrana"><meta property="og:description" content="Tell us about your company and request early access to Timbrana."><meta property="og:url" content="https://timbrana.com/invite.html">
   <meta name="twitter:card" content="summary"><meta name="twitter:title" content="Timbrana Early Access"><meta name="twitter:description" content="Request early access to Timbrana.">
   <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="assets/invite.css">
@@ -29,12 +29,12 @@
     <header class="intro" id="formIntro">
       <div class="program">Timbrana Early Access</div>
       <h1 class="page-heading">Request early access.</h1>
-      <p class="page-support">Interested in seeing how Timbrana could help your construction team? Tell us a little about your company and the challenges you want better visibility into. We'll contact you as early access becomes available. Submitting a request does not guarantee access or commit you to anything.</p>
+      <p class="page-support">Want to learn more about Timbrana? Leave your contact details and we'll reach out when early access opportunities become available. No demo appointment or commitment is required.</p>
     </header>
 
     <div class="success" id="successState" tabindex="-1" role="status" aria-live="polite" hidden>
       <h2 class="success-heading">Thanks. We received your request.</h2>
-      <p class="success-body">We'll review your interest and contact you as early access becomes available. No date or access is guaranteed.</p>
+      <p class="success-body">Thanks for your interest in Timbrana. We'll contact you if an early access opportunity becomes available.</p>
       <p class="success-note">There's nothing else you need to do right now.</p>
     </div>
 
@@ -44,34 +44,19 @@
       <input type="hidden" id="feedback_preference" name="feedback_preference" value="No preference">
       <div class="hp" aria-hidden="true"><label for="company_website">Company website</label><input type="text" id="company_website" name="company_website" tabindex="-1" autocomplete="off"></div>
 
-      <section class="section" aria-labelledby="about-you-heading">
-        <h2 class="section-heading" id="about-you-heading">About you</h2>
+      <section class="section" aria-labelledby="contact-heading">
+        <h2 class="section-heading" id="contact-heading">Your contact details</h2>
         <div class="field" data-field="full_name"><label for="full_name">Name</label><input type="text" id="full_name" name="full_name" autocomplete="name" maxlength="200" required><p class="error" id="error-full_name" hidden></p></div>
-        <div class="field" data-field="email"><label for="email">Work email</label><input type="email" id="email" name="email" autocomplete="email" maxlength="320" required><p class="error" id="error-email" hidden></p></div>
-        <div class="field" data-field="role"><label for="role">Role</label><select id="role" name="role" required><option value="" selected disabled>Select your role</option><option value="Company Owner">Company Owner</option><option value="General Manager">General Manager</option><option value="Operations Manager">Operations Manager</option><option value="Project Manager">Project Manager</option><option value="Superintendent">Superintendent</option><option value="Other">Other</option></select><p class="error" id="error-role" hidden></p></div>
-      </section>
-
-      <section class="section" aria-labelledby="company-heading">
-        <h2 class="section-heading" id="company-heading">Your company</h2>
+        <div class="field" data-field="email"><label for="email">Email</label><input type="email" id="email" name="email" autocomplete="email" maxlength="320" required><p class="error" id="error-email" hidden></p></div>
         <div class="field" data-field="company_name"><label for="company_name">Company</label><input type="text" id="company_name" name="company_name" autocomplete="organization" maxlength="200" required><p class="error" id="error-company_name" hidden></p></div>
-        <div class="field" data-field="company_type"><label for="company_type">Company type</label><select id="company_type" name="company_type" required><option value="" selected disabled>Select one</option><option value="General Contractor">General Contractor</option><option value="Construction Manager">Construction Manager</option><option value="Design-Build Firm">Design-Build Firm</option><option value="Specialty Contractor">Specialty Contractor</option><option value="Owner or Developer">Owner or Developer</option><option value="Other">Other</option></select><p class="error" id="error-company_type" hidden></p></div>
-        <div class="field" data-field="project_delivery_style"><label for="project_delivery_style">How does your team typically deliver projects?</label><select id="project_delivery_style" name="project_delivery_style" required><option value="" selected disabled>Select one</option><option value="We primarily coordinate subcontractors">We primarily coordinate subcontractors</option><option value="We coordinate subcontractors and self-perform some work">We coordinate subcontractors and self-perform some work</option><option value="We primarily self-perform the work">We primarily self-perform the work</option><option value="It varies by project">It varies by project</option></select><p class="error" id="error-project_delivery_style" hidden></p></div>
-        <div class="field" data-field="active_project_range"><div class="label-row"><label for="active_project_range">How many projects are typically active at one time?</label><span class="optional">Optional</span></div><select id="active_project_range" name="active_project_range"><option value="" selected>Prefer not to say</option><option value="1">1</option><option value="2–5">2–5</option><option value="6–10">6–10</option><option value="11–20">11–20</option><option value="More than 20">More than 20</option></select><p class="error" id="error-active_project_range" hidden></p></div>
+        <div class="field" data-field="reason_for_interest"><div class="label-row"><label for="reason_for_interest">Anything you'd like us to know?</label><span class="optional">Optional</span></div><textarea id="reason_for_interest" name="reason_for_interest" maxlength="1500" rows="3" placeholder="Your role, questions, or what you're looking for"></textarea><p class="error" id="error-reason_for_interest" hidden></p></div>
       </section>
-
-      <section class="section section-featured" aria-labelledby="project-heading">
-        <h2 class="section-heading" id="project-heading">Your projects</h2>
-        <p class="section-lede">This is the part we care about most.</p>
-        <div class="field field-featured" data-field="reason_for_interest"><div class="label-row"><label for="reason_for_interest">What's one problem you wish your team had better visibility into?</label><span class="char-count" id="count-reason_for_interest">0 / 1500</span></div><textarea id="reason_for_interest" name="reason_for_interest" maxlength="1500" rows="6" required></textarea><p class="error" id="error-reason_for_interest" hidden></p><p class="optional" style="margin-top:10px">A few sentences is plenty.</p></div>
-      </section>
-
-      <section class="section" aria-labelledby="program-heading">
-        <h2 class="section-heading" id="program-heading">Early access</h2>
-        <p class="section-lede">Tell us you're interested; we'll contact you when there is an appropriate next step.</p>
-        <div class="field" data-field="program_acknowledged"><label class="ack"><input type="checkbox" id="program_acknowledged" name="program_acknowledged" required><span>I understand that submitting this request does not guarantee early access.</span></label><p class="error" id="error-program_acknowledged" hidden></p></div>
-      </section>
-
-      <div class="submit-block"><p class="legal">By submitting, you agree that Timbrana may contact you about your early-access request.</p><p class="form-error" id="formError" hidden></p><button type="submit" class="cta-button" id="submitButton">Request Early Access</button></div>
+      <input type="hidden" id="role" name="role" value="Other">
+      <input type="hidden" id="company_type" name="company_type" value="Other">
+      <input type="hidden" id="project_delivery_style" name="project_delivery_style" value="It varies by project">
+      <input type="hidden" id="active_project_range" name="active_project_range" value="">
+      <input type="hidden" id="program_acknowledged" name="program_acknowledged" value="on">
+      <div class="submit-block"><p class="legal">By submitting, you agree to be contacted by Timbrana about your request. Early access is not guaranteed.</p><p class="form-error" id="formError" hidden></p><button type="submit" class="cta-button" id="submitButton">Request Early Access</button></div>
     </form>
   </div></main>
 
