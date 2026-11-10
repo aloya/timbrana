@@ -11,15 +11,10 @@
     project_awareness_meaning: 1500,
   };
 
-  const REQUIRED_SELECTS = [
-    "role",
-    "company_type",
-    "project_delivery_style",
-    "feedback_preference",
-  ];
+  const REQUIRED_SELECTS = [];
 
   const REQUIRED_TEXT = ["full_name", "email", "company_name"];
-  const REQUIRED_AREAS = ["reason_for_interest", "project_awareness_meaning"];
+  const REQUIRED_AREAS = [];
 
   function $(id) {
     return document.getElementById(id);
@@ -132,16 +127,6 @@
       }
     });
 
-    const ack = /** @type {HTMLInputElement|null} */ ($("program_acknowledged"));
-    if (!ack || !ack.checked) {
-      ok =
-        mark(
-          "program_acknowledged",
-          "Please confirm you understand before submitting.",
-          ack,
-        ) && ok;
-    }
-
     if (firstInvalid) {
       firstInvalid.scrollIntoView({ behavior: "smooth", block: "center" });
       if (typeof firstInvalid.focus === "function") {
@@ -173,7 +158,7 @@
       company_type: get("company_type"),
       project_delivery_style: get("project_delivery_style"),
       active_project_range: get("active_project_range") || null,
-      reason_for_interest: get("reason_for_interest"),
+      reason_for_interest: get("reason_for_interest") || "Interested in Timbrana early access.",
       project_awareness_meaning: get("project_awareness_meaning"),
       feedback_preference: get("feedback_preference"),
       program_acknowledged: data.get("program_acknowledged") === "on",
