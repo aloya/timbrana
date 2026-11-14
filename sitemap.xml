@@ -30,7 +30,7 @@
   </url>
   <url>
     <loc>https://timbrana.com/guides.html</loc>
-    <lastmod>2026-09-28</lastmod>
+    <lastmod>2026-11-14</lastmod>
     <image:image><image:loc>https://timbrana.com/assets/project.png</image:loc></image:image>
   </url>
   <url>
@@ -45,7 +45,7 @@
   </url>
   <url>
     <loc>https://timbrana.com/construction-issue-tracking-guide.html</loc>
-    <lastmod>2026-09-28</lastmod>
+    <lastmod>2026-11-14</lastmod>
     <image:image><image:loc>https://timbrana.com/assets/issue.png</image:loc></image:image>
   </url>
   <url>
@@ -103,4 +103,6 @@
     <lastmod>2026-09-28</lastmod>
     <image:image><image:loc>https://timbrana.com/assets/project.png</image:loc></image:image>
   </url>
+  <url><loc>https://timbrana.com/construction-punch-list-software.html</loc><lastmod>2026-11-14</lastmod></url>
+  <url><loc>https://timbrana.com/construction-rfi-tracking-software.html</loc><lastmod>2026-11-14</lastmod></url>
 </urlset>
